@@ -1,12 +1,17 @@
 import java.util.HashMap;
 import java.io.*;
 import java.util.*;
-
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String paragraph = "If the product of two terms is zero then common sense says at least one of the two terms has to be zero to start with. So if you move all the terms over to one side, you can put the quadratics into a form that can be factored allowing that side of the equation to equal zero. Once you’ve done that, it’s pretty straightforward from there.";
-        char[] charactersInString = paragraph.toCharArray();
+//        String paragraph = "If the product of two terms is zero then common sense says at least one of the two terms has to be zero to start with. So if you move all the terms over to one side, you can put the quadratics into a form that can be factored allowing that side of the equation to equal zero. Once you've done that, it's pretty straightforward from there.";
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Tell us about your day!: ");
+        String paragraph = input.nextLine();
+
+        char[] charactersInString = paragraph.toUpperCase().toCharArray();
         HashMap<Character, Integer> paragraphChars = new HashMap<>();
 
         //loop through each char in array
