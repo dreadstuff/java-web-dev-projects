@@ -20,6 +20,7 @@ public class Menu {
         this.items = items;
     }
 
+
     public Date getLastUpdated() {
         return lastUpdated;
     }
@@ -31,7 +32,6 @@ public class Menu {
         for (MenuItem item : items) {
             System.out.println(item);
         }
-        System.out.println("Last Updated on " + lastUpdated);
     }
     public void addMenuItem(MenuItem item) {
         items.add(item);

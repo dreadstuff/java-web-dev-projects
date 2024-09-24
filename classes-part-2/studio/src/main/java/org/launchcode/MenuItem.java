@@ -1,5 +1,7 @@
 package org.launchcode;
 
+
+
 public class MenuItem {
     private double price;
     private static String Description;
@@ -8,10 +10,15 @@ public class MenuItem {
 
     public MenuItem(double price, String Description, String category, boolean isNew) {
         this.price = price;
-        Description = Description;
+        this.Description = Description;
         this.category = category;
         this.isNew = isNew;
     }
+
+    public static void getDisplayItem() {
+
+    }
+
 
     public void setPrice(double price) {
         this.price = price;
@@ -31,5 +38,8 @@ public class MenuItem {
     public static String getDescription() {
         return Description;
     }
+
 }
+
+
 
